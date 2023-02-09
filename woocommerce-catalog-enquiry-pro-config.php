@@ -1,0 +1,15 @@
+<?php
+
+define('WOOCOMMERCE_CATALOG_ENQUIRY_PRO_PLUGIN_TOKEN', 'woocommerce-catalog-enquiry-pro');
+
+define('WOOCOMMERCE_CATALOG_ENQUIRY_PRO_TEXT_DOMAIN', 'woocommerce-catalog-enquiry-pro');
+
+define('WOOCOMMERCE_CATALOG_ENQUIRY_PRO_PLUGIN_VERSION', '2.0.7');
+
+define('WOOCOMMERCE_CATALOG_ENQUIRY_PRO_PLUGIN_SERVER_URL', 'https://multivendorx.com');
+
+define('WOOCOMMERCE_CATALOG_ENQUIRY_PRO_SCRIPT_DEBUG', false);
+
+define('WOOCOMMERCE_CATALOG_ENQUIRY_PRO_PLUGIN_PRODUCT_ID', '6844');
+
+define('WOOCOMMERCE_CATALOG_ENQUIRY_PRO_PLUGIN_SOFTWARE_TITLE', 'Woocommerce Catalog Enquiry Pro');

@@ -1,0 +1,31 @@
+<fieldset>
+    <legend class="screen-reader-text">Post Formats</legend>
+    <div class="wcce-enquiry-form-field-content">
+        <div class="wcce-enquiry-form-input-field-container">
+            <label>Label</label>
+            <input type="text" ng-model="field.label" class="wcce-enquiry-form-input-field" />
+        </div>
+        <div class="wcce-enquiry-form-input-field-container">
+            <label>Date Format</label>
+            <select class="wcce-enquiry-form-input-field" ng-model="field.dateformat" >
+                <option value="mm/dd/yy" ng-selected="field.dateformat === 'mm/dd/yy'">Default - mm/dd/yy</option>
+                <option value="yy-mm-dd" ng-selected="field.dateformat === 'yy-mm-dd'">ISO 8601 - yy-mm-dd</option>
+                <option value="d M, y" ng-selected="field.dateformat === 'd M, y'">Short - d M, y</option>
+                <option value="d MM, y" ng-selected="field.dateformat === 'd MM, y'">Medium - d MM, y</option>
+                <option value="DD, d MM, yy" ng-selected="field.dateformat === 'DD, d MM, yy'">Full - DD, d MM, yy</option>
+            </select>
+        </div>
+        <div class="wcce-enquiry-form-input-field-container">
+            <input type="checkbox" class="wcce-enquiry-form-input-field" ng-model="field.required" ng-checked="field.required" />
+            <label> Required</label>
+        </div>
+        <div class="wcce-enquiry-form-input-field-container">
+            <label>Custom CSS Classes</label>
+            <input type="text" class="wcce-enquiry-form-input-field" ng-model="field.cssClass" />
+        </div>
+        <div class="wcce-enquiry-form-input-field-container">
+            <a href="#" ng-click="removeFormField($index, $event)" class="wcce-remove-form-field">Remove</a>
+        </div>
+
+    </div>
+</fieldset>

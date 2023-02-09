@@ -1,0 +1,17 @@
+<fieldset>
+    <legend class="screen-reader-text">Post Formats</legend>
+    <div class="wcce-enquiry-form-field-content">
+        <div class="wcce-enquiry-form-input-field-container">
+            <label>Label</label>
+            <input type="text" ng-model="field.label" class="wcce-enquiry-form-input-field" />
+        </div>
+        <div class="wcce-enquiry-form-input-field-container">
+            <label>Custom CSS Classes</label>
+            <input type="text" class="wcce-enquiry-form-input-field" ng-model="field.cssClass" />
+        </div>
+        <div class="wcce-enquiry-form-input-field-container">
+            <a href="#" ng-click="removeFormField($index, $event)" class="wcce-remove-form-field">Remove</a>
+        </div>
+
+    </div>
+</fieldset>

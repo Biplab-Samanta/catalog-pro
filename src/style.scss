@@ -1,0 +1,198 @@
+/*dynamic declaration*/
+
+@mixin flexprops() {
+    display: flex;
+  }
+
+
+
+
+
+.inbox-msg, .select-area-wrap{
+    @include flexprops();
+    gap: 0.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.select-area-left, .select-area-right {
+    display: flex;
+    gap: 0.25rem;
+    justify-content: space-between;
+}
+.chat-img {
+    height: 2.5rem;
+    width: 2.5rem;
+    min-width: 2.5rem;
+}
+
+.chat-img img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+//start--- 
+.css-b62m3t-container{
+    min-width: 9.938rem;
+    border-radius: 0.125rem;
+    .css-13cymwt-control{
+        max-height: 2rem;
+    }    
+}
+.css-qbdosj-Input{
+    max-height: 2rem;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.select-area-right input{
+    min-width: 12rem;
+    border-radius: 0.25rem;
+    border: #d4d1d9 solid 0.06rem;
+    color: #181718; 
+}
+.inbox-chat{
+    .chat-list{
+        .chat-people{
+            @include flexprops();
+            align-items: center;
+            background: #fdfdfe;
+            border: 0.06rem solid #d9d1d4;
+            margin:0 0 0.125rem;
+            padding: 0.5rem;
+            gap: 1rem;
+            h5, p{
+                margin: 0;
+            }
+            p{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+}
+.inbox-people {
+    width: 25%;
+}
+.mesgs {
+    flex: auto;
+    .chat-people{
+        @include flexprops();
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        border: 0.06rem solid #d9d4d1;
+        background: #fdfdfe;
+        padding: 1rem;
+        span.user-name {
+            font-weight: 500;
+            font-size: 1rem;
+            color: #181718;
+        }
+        p{
+            margin: 0;
+        }
+    }
+    .statusDrpDown{
+        @include flexprops();
+        gap: 0.5rem;
+        .cat-visiblity > span {
+            padding: 0.25rem 1rem;
+            border-radius: 0.25rem;
+            background: #fceceb;
+            color: #DF5D65;
+        }
+        .cat-visiblity {
+            position: relative;
+        ul.enquiry-status-open {
+            background: #fdfdfe;
+            border: 0.06rem solid #d9d4d1;
+            padding: 1rem;
+            position: absolute;
+            width: 5rem;
+            right: 0;
+            top: 117%;
+            margin: 0;
+            box-shadow: 0rem 1rem 2.5rem rgb(63 20 115 / 5%);
+            .statusButnArea button {
+                background: #e35047;
+                border: 0;
+                color: #f9f8fb;
+                padding: 0.25rem 1rem;
+                line-height: 1.6;
+                margin: auto;
+                border-radius: 0.25rem;
+            }
+        }
+    }
+
+    }
+   
+    .msg-history {
+        background: #fdfdfe;
+        margin: 0.125rem 0;
+        padding: 1rem;
+        border: 0.06rem solid #d9d4d1;
+        border-radius: 0.125rem;
+    }
+    .input-msg-write {
+        display: flex;
+        gap: 1rem;
+        background: #fdfdfe;
+        border: 0.06rem solid #d9d4d1;
+        padding:1.25rem 1.25rem;
+        textarea{
+            border: 0;
+            line-height: 1.2;
+            resize: none;
+            text-transform: capitalize;
+        }    
+        .send_button{
+            background-color: #e35047;
+            border: 0;
+            padding: 0.25rem 1rem;
+            border-radius: 0.25rem;
+            color: #f9f8fb;
+            font-weight: 500;
+            font-size: 1rem;
+            box-shadow: -0.25rem 0.5rem 1.5rem rgb(63 20 115 / 15%);
+        }  
+    }
+    .imgNameCls {
+       @include flexprops();
+       align-items: center;
+        gap: 0.75rem;
+        .productDetailid{
+            font-weight: 500;
+            color: #65438F;
+        }
+        .chat-img p{
+            img{
+                border-radius: 50%;
+            }
+        }
+       
+    }
+}
+.incoming-msg {
+    margin-left: auto;
+    width: 40%;
+    text-align: right;
+}
+.received-withd-msg p {
+    border: 0.06rem solid #d9d1d6;
+    padding: 1rem;
+    border-radius: 0.5rem 0.5rem  0 0.5rem;
+    margin-bottom: 0.25rem;
+    background-color: #ece8f1;
+}
+@media screen and (max-width: 992px) {
+    .css-b62m3t-container {
+        min-width: 7.938rem;
+    }
+    .inbox-people {
+        width: 100%;
+    }
+  }

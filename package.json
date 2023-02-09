@@ -1,0 +1,28 @@
+{
+  "name": "woocommerce-catalog-enquiry-pro",
+  "version": "1.0.0",
+  "description": "=== WooCommerce Catalog Enquiry Pro ===\r Contributors: MultiVendorX\r Tags: woocommerce, catalog, woocommerce catalog, woocommerce catalog enquiry, woocommerce product enquiry, woocommerce enquiry form, woocommerce catalog enquiry form, woocommerce catalog and enquiry, woocommerce restricted shop, restricted shop, woocommerce shop by user, woocommerce shop by categories, woocommerce shop by products, woocommerce shop for selected users, woocommerce shop for selected categories, woocommerce shop for selected products, remove add to cart, remove price, catalog mode, woocommerce remove add to cart button, woocommerce catalogue mode",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/multivendorx/woocommerce-catalog-enquiry-pro.git"
+  },
+  "author": "rajsekhar chatterjee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/multivendorx/woocommerce-catalog-enquiry-pro/issues"
+  },
+  "homepage": "https://github.com/multivendorx/woocommerce-catalog-enquiry-pro#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^25.2.0"
+  },
+  "dependencies": {
+    "axios": "^1.2.5",
+    "react-select": "^5.7.0"
+  }
+}

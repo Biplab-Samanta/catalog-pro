@@ -1,0 +1,380 @@
+/*
+Enquiry form css
+Author     : WC Marketplace
+*/
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#loader-after-sumitting-the-form {
+	display:none;
+}
+.catalog_enquiry_form{display:none;}
+
+#woocommerce-catalog-pro .modal-content{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 700px;
+    max-width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    max-height: 80%;
+    overflow: auto;
+    transform: translate(-50%, 0);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+#woocommerce-catalog-pro .catalog-modal p {
+    margin-bottom: 8px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+#woocommerce-catalog-pro .modal-content .modal-header .close {
+    margin-top: 2px;
+    line-height: 1;
+    margin: 3px 0 0;
+    min-height: auto;
+}
+#woocommerce-catalog-pro .modal-content .modal-header h2 {
+    margin: 0; 
+    display: inline-block;
+    width: calc(100% - 22px);
+}
+
+#woocommerce-catalog-pro .modal-content button.close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+#woocommerce-catalog-pro .modal-content .close {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #000000;
+    text-shadow: 0 1px 0 #ffffff;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+}
+#woocommerce-catalog-pro .modal-content .btn-default{
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+}
+
+#woocommerce-catalog-pro .modal-content .modal-header {
+    padding: 9px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+#woocommerce-catalog-pro .modal-content .modal-body {
+    padding: 2px 16px;
+    width: 100%;
+}
+
+#woocommerce-catalog-pro .modal-content .modal-body .row-fluid p input{width: 100%;height: 40px;}
+#woocommerce-catalog-pro .modal-content .modal-body .row-fluid p input[type=text],#woocommerce-catalog-pro .modal-content .modal-body .row-fluid p input[type=email],#woocommerce-catalog-pro .modal-content .modal-body .row-fluid p textarea{
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  	transition: all 0.3s ease-in-out;
+  	outline: none;
+  	padding: 3px 0px 3px 3px;
+  	margin: 5px 1px 3px 0px;
+  	border: 1px solid #DDDDDD;
+}
+
+#woocommerce-catalog-pro .modal-content .modal-body .row-fluid p input[type=text]:focus,#woocommerce-catalog-pro .modal-content .modal-body .row-fluid p input[type=email]:focus,#woocommerce-catalog-pro .modal-content .modal-body .row-fluid p textarea:focus {
+    -moz-box-shadow: 0 0 5px #51cbee;
+    -webkit-box-shadow: 0 0 5px #51cbee;
+    box-shadow: 0 0 5px #51cbee;
+    padding: 3px 0px 3px 3px;
+   	margin: 5px 1px 3px 0px;
+ 	border: 1px solid #51cbee;
+}
+.has_error{
+	-webkit-box-shadow:0 0 5px red !important; 
+    -moz-box-shadow: 0 0 5px red !important; 
+    box-shadow:0 0 5px red !important;
+    border: 1px solid red !important;
+}
+
+#woocommerce-catalog-pro .modal-content .modal-footer {
+    padding: 14px 15px 15px;
+    margin-bottom: 0;
+    text-align: right;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+}
+#woocommerce-catalog-pro .wcce-enquiry-cart {
+    padding-top: 4px;
+}
+#woocommerce-catalog-pro .modal-content .modal-footer .btn{
+    margin-bottom: 0;
+}
+
+.ajaxloader {
+  border: 2px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 2px solid #3498db;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*  mini enquiry cart */
+.widget_woocommerce_catalog_enquiry_cart .product_list_widget {
+    margin-bottom: 0;
+}
+.widget_woocommerce_catalog_enquiry_cart p.buttons {
+    padding: 1em 0;
+    margin: 0;
+    text-align: center;
+}
+.widget_woocommerce_catalog_enquiry_cart .buttons .button {
+    display: block;
+}
+.widget_woocommerce_catalog_enquiry_cart .buttons .button:nth-child(odd) {
+    margin-bottom: .6180469716em;
+}
+.widget_woocommerce_catalog_enquiry_cart .product_list_widget li {
+    padding-left: 2em;
+    position: relative;
+}
+.widget_woocommerce_catalog_enquiry_cart .product_list_widget li a.remove {
+    position: absolute;
+    /*top: 1em;*/
+    left: 0;
+    opacity: 1;
+}
+
+#woocommerce-catalog-pro .catalog-modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100000; /* Sit on top */
+    /*padding-top: 100px;*/ /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+
+/* frontend enq form */
+
+.clearboth{
+    clear: both;
+}
+
+.woocommerce_catalog_enq_form_wrapper .enq_header2{
+    font-weight: 700;
+    font-size: 16px;
+    color: #888899;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #ddd;
+    text-transform: uppercase;
+}
+
+.woocommerce_catalog_enq_form_wrapper .woocommerce-catalog-enquiry-massage{
+    text-align: center;
+}
+
+.woocommerce_catalog_enq_form_wrapper .wcce-enq-12{
+    width: 98%;
+    margin: 1%;
+    float: left;
+}
+.woocommerce_catalog_enq_form_wrapper .wcce-enq-6{
+    width: 48%;
+    margin: 1%;
+    float: left;
+}
+.woocommerce_catalog_enq_form_wrapper .wcce-enq-4{
+    width: 31.2%;
+    margin: 1%;
+    float: left;
+}
+
+@media (max-width: 911px){
+    .woocommerce_catalog_enq_form_wrapper .wcce-enq-12,
+    .woocommerce_catalog_enq_form_wrapper .wcce-enq-6,
+    .woocommerce_catalog_enq_form_wrapper .wcce-enq-4{
+        width: 98%;
+        margin: 1%;
+    }
+}
+
+.woocommerce_catalog_enq_form_wrapper label{
+    font-weight: 700;
+    font-size: 14px;
+    color: #888899;
+}
+
+.woocommerce_catalog_enq_form_wrapper p{
+    margin: 0px;
+    padding: 0px 5px;
+    font-size: 14px;
+    color: #888899;
+    line-height: 27px;
+    border-bottom: 1px solid #fafafa;
+}
+
+.woocommerce_catalog_enq_form_wrapper p input[type="checkbox"],
+.woocommerce_catalog_enq_form_wrapper p input[type="radio"]{
+    display: inline-block;
+    margin: 2px;
+    vertical-align: middle;
+    width: auto !important;
+    height: auto !important;
+}
+p.wcce-enq-radio-wrap{
+    line-height: 15px;
+    margin: 2px 0 0;
+}
+p.wcce-enq-radio-wrap label{
+    font-weight: normal;
+    margin: 0;
+}
+
+.woocommerce_catalog_enq_form_wrapper input[type="text"],
+.woocommerce_catalog_enq_form_wrapper input[type="url"],
+.woocommerce_catalog_enq_form_wrapper input[type="password"],
+.woocommerce_catalog_enq_form_wrapper input[type="email"],
+.woocommerce_catalog_enq_form_wrapper input[type="file"],
+.woocommerce_catalog_enq_form_wrapper textarea{
+    width: 100%;
+    background: #fafafa;
+    border: 1px solid #eee;
+    height: 38px;
+    line-height: 16px;
+    color: #888899;
+    padding: 6px 9px;
+    font-size: 15px;
+    margin: 0 0 3px;
+}
+.woocommerce_catalog_enq_form_wrapper textarea{
+    height: 100px;
+    line-height: 17px;
+}
+.woocommerce_catalog_enq_form_wrapper .select_box{
+    width: 100%;
+    background: #fafafa;
+    border: 1px solid #eee;
+    height: 38px;
+    line-height: 38px;
+    position: relative;
+    color: #888899;
+}
+.woocommerce_catalog_enq_form_wrapper .select_box select{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    height: 36px;
+    line-height: 36px;
+    vertical-align: top;
+    padding: 0 7px;
+    width: 99%;
+    font-size: 14px;
+    color: #888899 ;
+}
+.woocommerce_catalog_enq_form_wrapper .select_box select:focus{
+    outline: none;
+}
+
+.woocommerce_catalog_enq_form_wrapper .mvx_regi_file_holder{
+    width: 100%;
+    position: relative;
+}
+.woocommerce_catalog_enq_form_wrapper .mvx_regi_file_holder span{
+    color: #888899;
+    font-size: 14px;
+    left: 10px;
+    position: absolute;
+    top: 5px;
+    z-index: 10;
+}
+.woocommerce_catalog_enq_form_wrapper .mvx_regi_file_holder::after {
+    background: #fafafa none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #888899;
+    content: "";
+    height: 36px;
+    left: 1px;
+    line-height: 38px;
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    top: 1px;
+    width: 99%;
+}
+
+.woocommerce_catalog_enq_form_wrapper .button{
+    width: auto;
+    background: #5b5b5b;
+    padding: 0 20px;
+    font-size: 17px;
+    border: 1px solid #eee;
+    height: 38px;
+    line-height: 36px;
+    color: #fff;
+}
+.woocommerce_catalog_enq_form_wrapper .button:hover{
+    background: #111;
+}
+
+.woocommerce_catalog_enq_form_wrapper .button:focus{
+    outline: none;
+} 
+.woocommerce_catalog_enq_form_wrapper input[type="file"]{
+    height: auto;
+}
+.woocommerce_catalog_enq_cart tr td.enquiry-actions {
+    background: transparent;
+    padding: 0px;
+    border-top: 1em solid transparent;
+}
+.wcce-cart-wrapper form{ margin-bottom: 0px;}
+.wcce-cart-wrapper form table.woocommerce_catalog_enq_cart{ margin-bottom: 0px;}
+.woocommerce_catalog_enq_cart tr td.enquiry-actions .enq_cart_update_btn { float: right; }
+
+.wcce-cart-wrapper #woocommerce-catalog-pro{
+    position: relative;
+    width: 50%;
+}
+.wcce-enquiry-add-button a.button{
+    transition: 0s;
+}

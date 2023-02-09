@@ -1,0 +1,1174 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-04 04:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:74
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:114
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:171
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:223
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:268
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:311
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:384
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:456
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:535
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:607
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:681
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:749
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:787
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:134
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:254
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:381
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:498
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:605
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:707
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:842
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:978
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1105
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1225
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1358
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1485
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1592
+#: templates/emails/plain/woocommerce-catalog-enquiry-pro-reply-email.php:25
+#: templates/emails/plain/woocommerce-catalog-enquiry-pro-send-email.php:66
+#, php-format
+msgid "%s - Powered by WC Catalog Enquiry Pro"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:572
+msgid "** No enquiry Found **"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-details.php:127
+msgid "*** No enquiry Found ***"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:764
+msgid "</a>"
+msgstr ""
+
+#: classes/emails/class-woocommerce-catalog-enquiry-pro-send-email.php:71
+#: classes/emails/class-woocommerce-catalog-enquiry-pro-send-email.php:80
+msgid "[{site_title}] Multiple Product Enquiry by |USER_NAME|"
+msgstr ""
+
+#: classes/emails/class-woocommerce-catalog-enquiry-pro-send-email.php:42
+#: classes/emails/class-woocommerce-catalog-enquiry-pro-send-email.php:117
+#: classes/emails/class-woocommerce-catalog-enquiry-pro-send-email.php:124
+#: classes/emails/class-woocommerce-catalog-enquiry-pro-send-email.php:132
+msgid "[{site_title}] Product Enquiry for |PRODUCT_NAME| by |USER_NAME|"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-license.php:399
+msgid "Activation"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:52
+#, php-format
+msgid "Add New %s"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:352
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:423
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:666
+msgid "Add to Enquiry Cart"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:410
+msgid "Admin"
+msgstr ""
+
+#: classes/emails/class-woocommerce-catalog-enquiry-pro-send-email.php:37
+msgid ""
+"Admin and Customer will get an alert when customer enquiry about a product"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:453
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-details.php:29
+msgid "All"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:692
+msgid "Allow Quantity in Enquiry cart?"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:804
+msgid "Allow Vendor To Customize Button"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro.php:352
+msgid "Allow vendors to manage catalog enquiry details."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro.php:351
+msgid "Allow vendors to manage their own catalog enquiry settings."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:727
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:92
+msgid "Alternative Text at Price"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:227
+msgid "Attachment"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:671
+msgid ""
+"Available tags |USER_NAME|,|USER_EMAIL|,|PRODUCT_NAME|,|PRODUCT_URL|,"
+"|PRODUCT_SKU|,|PRODUCT_TYPE| ****All the product related tags are not "
+"available for multiple enquiry."
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:47
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:87
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:134
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:186
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:243
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:286
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:341
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:412
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:489
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:561
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:640
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:708
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:773
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:781
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:151
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:398
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:627
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:873
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1134
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1388
+msgid "By "
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro.php:352
+msgid "Can Manage Catalog Details"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro.php:351
+msgid "Can Manage Catalog Settings"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:160
+msgid "Cancel"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:221
+msgid "Captcha"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:755
+msgid "Catalog Enquiry"
+msgstr ""
+
+#: classes/widgets/class-woocommerce-catalog-enquiry-pro-widget-enquiry-cart.php:28
+msgid "Catalog Enquiry Cart"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:115
+msgid "Catalog Enquiry Details"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:41
+msgid "Catalog Enquiry Popup Disable"
+msgstr ""
+
+#: classes/emails/class-woocommerce-catalog-enquiry-pro-reply-email.php:34
+msgid "Catalog Enquiry Reply"
+msgstr ""
+
+#: classes/emails/class-woocommerce-catalog-enquiry-pro-send-email.php:36
+msgid "Catalog Enquiry Send"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:116
+msgid "Catalog Enquiry Settings"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-license.php:388
+msgid "Catalog License"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:736
+msgid "Change Enquiry button position."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:212
+msgid "Check Box"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:660
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:143
+msgid "Choose a Email Template"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:490
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-details.php:65
+msgid "Choose Segment"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:115
+msgid "Choose your preferred page for Catalog Enquiry Details."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:116
+msgid "Choose your preferred page for Catalog Enquiry Settings."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:81
+#: templates/woocommerce-catalog-enquiry-pro-multi-product-form-template.php:100
+msgid "Close"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:457
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:55
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-details.php:32
+msgid "Closed"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-license.php:411
+msgid "Common Settings pro "
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:795
+msgid "Completed"
+msgstr ""
+
+#. Description of the plugin
+msgid "Convert your WooCommerce store into a catalog website in a click"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:670
+msgid "Custom Email Subject"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:59
+msgid "Custom Form Heading"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:745
+msgid "Custom Priority for Enquiry Button"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:475
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-details.php:50
+msgid "Customer name"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:278
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:279
+msgid "Customer Queries"
+msgstr ""
+
+#: classes/emails/class-woocommerce-catalog-enquiry-pro-reply-email.php:35
+msgid "Customer will get an email when admin replies on customer enquiry"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:78
+msgid "Date : "
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:215
+msgid "Date Picker"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:501
+msgid "Date Range"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-details.php:77
+msgid "Date Range:"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-license.php:417
+msgid "Deactivation"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:56
+msgid "Delete"
+msgstr ""
+
+#: classes/widgets/class-woocommerce-catalog-enquiry-pro-widget-enquiry-cart.php:26
+msgid "Display the user's catalog enquiry cart in the sidebar."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:53
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:200
+msgid "Email"
+msgstr ""
+
+#: templates/woocommerce-catalog-enquiry-pro-form-template.php:69
+#: templates/woocommerce-catalog-enquiry-pro-form-template.php:123
+#: templates/woocommerce-catalog-enquiry-pro-multi-product-form-template.php:44
+#: templates/woocommerce-catalog-enquiry-pro-multi-product-form-template.php:88
+msgid "Email "
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:23
+msgid "Email Template"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:65
+msgid "Enable Add to cart with Catalog mode"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:681
+msgid "Enable Add to cart?"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:255
+msgid "Enable Custom Button style"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:32
+msgid "Enable Multiple Catalog Enquiry for your Store"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:763
+msgid "Enable Multiple Product Enquiry"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:764
+msgid ""
+"Enable this checkbox to allow multiple product enquiry via enquiry cart. "
+"Also multiple enquiry product displays on the cart "
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:704
+msgid "Enable this checkbox to hide product price and disable purchase."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:682
+msgid ""
+"Enable this if you want add to cart button  along with enquiry button "
+"throughout the shop."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:693
+msgid "Enable this if you want to allow quantity in enquiry cart."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:865
+msgid "Enable this to activate catalog mode sitewide."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:871
+msgid ""
+"Enable this to hide cart and checkout page and set new page to redirect the "
+"user."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:779
+msgid "Enable this to send the enquiry mail copy to customer."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:789
+msgid "Enable vendor Enquiry Email Copy To Admin"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro.php:69
+msgid "Enquiry"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:76
+msgid "Enquiry : "
+msgstr ""
+
+#: templates/woocommerce-catalog-enquiry-pro-form-template.php:53
+#: templates/woocommerce-catalog-enquiry-pro-form-template.php:107
+msgid "Enquiry about "
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:25
+msgid "Enquiry Button"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:735
+msgid "Enquiry Button Postion"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:265
+msgid "Enquiry Button Text"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro.php:277
+#: classes/widgets/class-woocommerce-catalog-enquiry-pro-widget-enquiry-cart.php:32
+msgid "Enquiry Cart"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:830
+msgid "Enquiry Cart - Multiple Product Enquiry Button Customizer"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:757
+msgid "Enquiry Cart - Multiple Product Enquiry Settings"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:271
+msgid "Enquiry Cart Button Text"
+msgstr ""
+
+#: templates/shortcode/woocommerce-catalog-enquiry-pro-cart.php:26
+msgid "Enquiry Cart is Empty!"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:1041
+msgid "Enquiry cart updated!"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:364
+msgid "Enquiry deleted successfully"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:761
+#: classes/class-woocommerce-catalog-enquiry-pro.php:310
+msgid "Enquiry Details"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:640
+msgid "Enquiry Email Template"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:476
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-details.php:51
+msgid "Enquiry Number"
+msgstr ""
+
+#: classes/emails/class-woocommerce-catalog-enquiry-pro-reply-email.php:40
+msgid "Enquiry reply by [{site_title}] {owner_name}"
+msgstr ""
+
+#: classes/emails/class-woocommerce-catalog-enquiry-pro-reply-email.php:41
+msgid "Enquiry Reply on [{product_name}]"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:508
+msgid "Enquiry reply sent successfully"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:473
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:89
+msgid "Enquiry Response"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:469
+msgid "Enquiry Response for "
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:768
+#: classes/class-woocommerce-catalog-enquiry-pro.php:314
+msgid "Enquiry Settings"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:362
+msgid "Enquiry status changed successfully"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:971
+msgid "Error occurred while adding product to Enquiry Cart."
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:291
+msgid "Example Enquiry"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:24
+msgid "Exclusion"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:177
+msgid "Field is empty"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:494
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-details.php:69
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-details.php:84
+msgid "Filter"
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1554
+msgid "Find the product Link"
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:162
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:406
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:631
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:880
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1152
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1409
+msgid "Find the product link"
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:51
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:91
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:139
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:191
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:244
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:287
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:345
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:416
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:504
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:576
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:657
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:725
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:774
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:782
+msgid "First of all, Thanks for showing interest on "
+msgstr ""
+
+#: templates/emails/plain/woocommerce-catalog-enquiry-pro-reply-email.php:17
+msgid "First of all, Thanks for showing interest. Enquiry Response"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:22
+msgid "General Settings"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:816
+msgid "Hide cart message after product added to enquiry cart."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:815
+msgid "Hide Enquiry Cart message"
+msgstr ""
+
+#: classes/widgets/class-woocommerce-catalog-enquiry-pro-widget-enquiry-cart.php:38
+msgid "Hide if enquiry cart is empty"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://multivendorx.com"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:790
+msgid "If enabled, admin will receive a vendor enquiry mail copy."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:805
+msgid "If enabled, Vendor can customize button style."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:1144
+msgid "is required."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:715
+msgid ""
+"Just Checked this checkbox to replace the price with text.\n"
+"          ** Please uncheck Remove Price, if you already checked it."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:297
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:298
+msgid "Licence"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:209
+msgid "List"
+msgstr ""
+
+#: templates/woocommerce-catalog-enquiry-pro-multi-product-form-template.php:29
+#: templates/woocommerce-catalog-enquiry-pro-multi-product-form-template.php:73
+msgid "Multiple Enquiry"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:838
+msgid "Multiple Enquiry Cart Button Text"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:413
+msgid "Multiple Enquiry Response by |ADMIN|"
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:29
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:273
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:517
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:736
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1010
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1257
+msgid "Multiple Product Enquiry by"
+msgstr ""
+
+#: classes/emails/class-woocommerce-catalog-enquiry-pro-send-email.php:85
+msgid "Multiple Product Enquiry by |USER_NAME|"
+msgstr ""
+
+#: classes/emails/class-woocommerce-catalog-enquiry-pro-reply-email.php:75
+msgid "Multiple Product Enquiry Reply"
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:46
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:133
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:242
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:340
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:488
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:639
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:772
+msgid "Multiple Product Enquiry Response"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:847
+msgid "Multiple View Enquiry Cart Message Text"
+msgstr ""
+
+#: templates/woocommerce-catalog-enquiry-pro-form-template.php:81
+#: templates/woocommerce-catalog-enquiry-pro-form-template.php:135
+msgid "My Enquiry"
+msgstr ""
+
+#: templates/woocommerce-catalog-enquiry-pro-form-template.php:64
+#: templates/woocommerce-catalog-enquiry-pro-form-template.php:118
+#: templates/woocommerce-catalog-enquiry-pro-multi-product-form-template.php:39
+#: templates/woocommerce-catalog-enquiry-pro-multi-product-form-template.php:83
+msgid "Name "
+msgstr ""
+
+#: includes/class-woocommerce-catalog-enquiry-pro-core-functions.php:568
+msgid "No conversation found !!"
+msgstr ""
+
+#: templates/woocommerce-catalog-enquiry-pro-customer-reply-template.php:73
+msgid "No enquiry Found"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:1080
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:1140
+msgid "No more product in Enquiry Cart!"
+msgstr ""
+
+#: templates/woocommerce-catalog-enquiry-pro-mini-cart.php:79
+msgid "No products in the enquiry cart."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:159
+msgid "Ok"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:139
+msgid "Open"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:107
+msgid "Other Email that receive Enquiry Mail"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:50
+msgid "Override Enquiry Form Heading"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro.php:276
+msgctxt "page_slug"
+msgid "woocommerce_catalog_enquiry_cart"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:1145
+msgid "Please check the Recaptcha"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:492
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-details.php:67
+msgid "Please choose from above"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:1146
+msgid "Please dont spam"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:1143
+msgid "Please Enter Valid Email Id."
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:34
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:155
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:279
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:403
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:519
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:628
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:741
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:877
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1026
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1149
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1275
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1405
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1509
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1551
+#: templates/emails/plain/woocommerce-catalog-enquiry-pro-send-email.php:18
+msgid "Please find the product enquiry, details are given below"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:177
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:850
+#: classes/class-woocommerce-catalog-enquiry-pro.php:127
+msgid "Please wait..."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:49
+msgctxt "post type general name"
+msgid "WC Catalog Enquiry Details"
+msgstr ""
+
+#: templates/shortcode/woocommerce-catalog-enquiry-pro-cart.php:43
+msgid "Price"
+msgstr ""
+
+#: templates/shortcode/woocommerce-catalog-enquiry-pro-cart.php:38
+msgid "Product"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:978
+#: includes/class-woocommerce-catalog-enquiry-pro-cart.php:190
+msgid "Product added to Enquiry Cart!"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:981
+#: includes/class-woocommerce-catalog-enquiry-pro-cart.php:193
+#: includes/class-woocommerce-catalog-enquiry-pro-cart.php:233
+msgid "Product already in Enquiry Cart."
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:229
+msgid "Product Catagory List Excluded from Catalog Enquiry"
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:149
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:396
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:625
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:871
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1132
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1386
+msgid "Product Enquiry For"
+msgstr ""
+
+#: classes/emails/class-woocommerce-catalog-enquiry-pro-send-email.php:44
+msgid "Product Enquiry for |PRODUCT_NAME|"
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:86
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:185
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:285
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:411
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:560
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:707
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:780
+msgid "Product Enquiry Response"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:208
+msgid "Product List Excluded from Catalog Enquiry"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:474
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:100
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:160
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:226
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:347
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:404
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:470
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:571
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:629
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:679
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:806
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:878
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:942
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1068
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1150
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1190
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1321
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1407
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1451
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-details.php:49
+msgid "Product Name"
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1552
+msgid "Product Name :"
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1526
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1571
+msgid "Product Name : "
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1543
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1588
+msgid "Product SKU : "
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:119
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:245
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:366
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:489
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:591
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:699
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:823
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:959
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1085
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1207
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1338
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1468
+msgid "Product Url"
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1542
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1587
+msgid "Product Url : "
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:115
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:241
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:362
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:485
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:586
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:694
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:821
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:957
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1083
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1205
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1336
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1466
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1541
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1586
+#: templates/shortcode/woocommerce-catalog-enquiry-pro-cart.php:40
+msgid "Quantity"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:135
+msgid "Quantity : "
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:82
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:455
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:53
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:796
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-details.php:30
+msgid "Read"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:224
+msgid "Recaptcha"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:113
+msgid "Redirect other page after Enquiry Success"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:703
+msgid "Remove Price? (This disables Add to cart feature)"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:74
+msgid "Remove Product Price"
+msgstr ""
+
+#: templates/woocommerce-catalog-enquiry-pro-mini-cart.php:38
+#: templates/shortcode/woocommerce-catalog-enquiry-pro-cart.php:55
+msgid "Remove this item"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:98
+msgid "Remove your email from Enquiry Mail Receiver"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:83
+msgid "Replace Price with Text"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:714
+msgid "Replace Price with Text?"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:177
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:846
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:911
+#: classes/class-woocommerce-catalog-enquiry-pro.php:123
+msgid "Reply sent successfully!"
+msgstr ""
+
+#: templates/shortcode/woocommerce-catalog-enquiry-pro-cart.php:28
+msgid "Return To Shop"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:384
+msgid "Save Options"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:480
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-details.php:55
+msgid "Search By"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:462
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-details.php:37
+msgid "Search By Status"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:230
+msgid "Section"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:661
+msgid "Select a Email template from above templates."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:473
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-details.php:48
+msgid "Select a Segment"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:122
+msgid "Select Redirect page"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:137
+msgid "SEND"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:177
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:849
+#: classes/class-woocommerce-catalog-enquiry-pro.php:126
+#: templates/woocommerce-catalog-enquiry-pro-form-template.php:88
+#: templates/woocommerce-catalog-enquiry-pro-form-template.php:142
+#: templates/woocommerce-catalog-enquiry-pro-multi-product-form-template.php:56
+#: templates/woocommerce-catalog-enquiry-pro-multi-product-form-template.php:101
+msgid "Send"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:326
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:328
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:330
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:399
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:401
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:403
+#: templates/shortcode/woocommerce-catalog-enquiry-pro-cart.php:130
+#: templates/shortcode/woocommerce-catalog-enquiry-pro-cart.php:132
+#: templates/shortcode/woocommerce-catalog-enquiry-pro-cart.php:135
+msgid "Send an Enquiry"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:778
+msgid "Send Copy To Customer"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:286
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:287
+msgid "Settings"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:177
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:511
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:847
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:912
+#: classes/class-woocommerce-catalog-enquiry-pro.php:124
+msgid "Somethings wrong with your mail!"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:366
+msgid "Somethings wrong!"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:144
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:856
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:913
+#: classes/class-woocommerce-catalog-enquiry-pro.php:132
+msgid "Start Typing"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:146
+msgid "Status : "
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:56
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:96
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:148
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:200
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:250
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:293
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:360
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:431
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:508
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:580
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:660
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:728
+msgid "Subject"
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:775
+#: templates/emails/woocommerce-catalog-enquiry-pro-reply-email.php:783
+msgid "Subject : "
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:206
+msgid "Textarea"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:197
+msgid "Textbox"
+msgstr ""
+
+#: templates/woocommerce-catalog-enquiry-pro-cart-button-template.php:51
+msgid "The product is already in Enquiry Cart!"
+msgstr ""
+
+#: templates/woocommerce-catalog-enquiry-pro-cart-button-template.php:44
+#: templates/woocommerce-catalog-enquiry-pro-form-template.php:79
+#: templates/woocommerce-catalog-enquiry-pro-form-template.php:133
+msgid "This product is already in your Enquiry list"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:728
+msgid "This text will be displayed at the place of the product."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:218
+msgid "Time Picker"
+msgstr ""
+
+#: classes/widgets/class-woocommerce-catalog-enquiry-pro-widget-enquiry-cart.php:33
+msgid "Title"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:138
+msgid "Type a message.."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:83
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:456
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:797
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-details.php:31
+msgid "Unread"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:54
+msgid "unread"
+msgstr ""
+
+#: templates/shortcode/woocommerce-catalog-enquiry-pro-cart.php:118
+msgid "Update Enquiry Cart"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:203
+msgid "Url"
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:58
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:187
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:303
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:431
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:537
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:650
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:764
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:903
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1038
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1165
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1288
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1424
+msgid "User Email"
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1511
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1557
+#: templates/emails/plain/woocommerce-catalog-enquiry-pro-send-email.php:22
+msgid "User Email : "
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:187
+msgid "User List Excluded from Catalog Enquiry"
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:48
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:177
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:293
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:421
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:527
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:640
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:757
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:896
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1031
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1157
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1280
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1416
+msgid "User Name"
+msgstr ""
+
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1510
+#: templates/emails/woocommerce-catalog-enquiry-pro-send-email.php:1556
+#: templates/emails/plain/woocommerce-catalog-enquiry-pro-send-email.php:21
+msgid "User Name : "
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:987
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:176
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:355
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:426
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:669
+msgid "View Enquiry Cart"
+msgstr ""
+
+#: templates/vendor-dashboard/woocommerce-catalog-enquiry-pro-vendor-catalog-settings.php:277
+msgid "View Enquiry Cart Button Text"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:52
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:53
+msgid "WC Catalog Enquiry Detail"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:54
+msgid "WC Catalog Enquiry Details"
+msgstr ""
+
+#. Author of the plugin
+msgid "WC Marketplace"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro.php:348
+msgid "Woocommerce Catalog Enquiry"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-admin.php:652
+msgid "Woocommerce Catalog Enquiry Email Template Settings "
+msgstr ""
+
+#. Name of the plugin
+msgid "Woocommerce Catalog Enquiry Pro"
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-ajax.php:1035
+#, php-format
+msgid "You can only have 1 %s in your cart."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:875
+msgid ""
+"You do not have permission to access the Catalog Enquiry Details. Please "
+"contact site administrator."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:945
+msgid ""
+"You do not have permission to access the Catalog Enquiry Settings. Please "
+"contact site administrator."
+msgstr ""
+
+#: classes/class-woocommerce-catalog-enquiry-pro-frontend.php:848
+#: classes/class-woocommerce-catalog-enquiry-pro.php:125
+msgid "You have to write something"
+msgstr ""

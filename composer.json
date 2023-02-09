@@ -1,0 +1,16 @@
+{
+    "name": "rajsekhar-chatterjee/woocommerce-catalog-enquiry-pro",
+    "description": "Convert your WooCommerce store into a catalog website in a click",
+    "autoload": {
+        "psr-4": {
+            "RajsekharChatterjee\\WoocommerceCatalogEnquiryPro\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "cool-raju",
+            "email": "rajsekhar@dualcube.com"
+        }
+    ],
+    "require": {}
+}

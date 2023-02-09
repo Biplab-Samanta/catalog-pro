@@ -1,0 +1,23 @@
+<fieldset>
+    <legend class="screen-reader-text">Post Formats</legend>
+    <div class="wcce-enquiry-form-field-content">
+        <div class="wcce-enquiry-form-input-field-container">
+            <label>Label</label>
+            <input type="text" ng-model="field.label" class="wcce-enquiry-form-input-field" />
+        </div>
+        <div class="wcce-enquiry-form-input-field-container">
+            <p>To get <b>reCAPTCHA</b> Site key and Secret key for your site, register your site with google account <a href="https://www.google.com/recaptcha" target="_blank">Register</a></p>
+        </div>
+        <div class="wcce-enquiry-form-input-field-container">
+            <label>Site key</label>
+            <input type="text" ng-model="field.site_key" class="wcce-enquiry-form-input-field" />
+        </div>
+        <div class="wcce-enquiry-form-input-field-container">
+            <label>Secret key</label>
+            <input type="text" ng-model="field.secret_key" class="wcce-enquiry-form-input-field" />
+        </div>
+
+        <div class="wcce-enquiry-form-input-field-container">
+            <a href="#" ng-click="removeFormField($index, $event)" class="wcce-remove-form-field">Remove</a>
+    </div>
+</fieldset>
