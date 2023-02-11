@@ -2,67 +2,107 @@
 
 @mixin flexprops() {
     display: flex;
+    flex-wrap: wrap;
   }
 
 
 
-
+ 
 
 .inbox-msg, .select-area-wrap{
     @include flexprops();
     gap: 0.5rem;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
+.inbox-msg{
+    margin-top: 1rem;
+  }
 .select-area-left, .select-area-right {
     display: flex;
-    gap: 0.25rem;
-    justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.25rem;
 }
 .chat-img {
-    height: 2.5rem;
-    width: 2.5rem;
-    min-width: 2.5rem;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
 }
-
 .chat-img img {
     object-fit: cover;
     object-position: center;
     height: 100%;
     width: 100%;
+    border-radius: 0.125rem;
 }
-//start--- 
 .css-b62m3t-container{
     min-width: 9.938rem;
     border-radius: 0.125rem;
     .css-13cymwt-control{
         max-height: 2rem;
+        border-radius: 0.125rem;
+        border-color: #d4d1d9;
     }    
 }
 .css-qbdosj-Input{
     max-height: 2rem;
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0 !important;/*to avoid inline css*/
+    padding: 0 !important;/*to avoid inline css*/
+    color: #181718 !important;/*to avoid inline css*/
 }
 .select-area-right input{
     min-width: 12rem;
-    border-radius: 0.25rem;
+    width: 48%;
+    border-radius: 0.125rem;
     border: #d4d1d9 solid 0.06rem;
-    color: #181718; 
+    color: #181718;
+    font-size: 0.75rem; 
 }
 .inbox-chat{
+    .chat-list.active-product{
+        .chat-people{
+            background-color: #fdfdfe;
+        }
+    }
     .chat-list{
         .chat-people{
             @include flexprops();
             align-items: center;
-            background: #fdfdfe;
-            border: 0.06rem solid #d9d1d4;
+            border-radius: 0.125rem;
+            background-color: #f9f8fb;
+            border: 0.06rem solid #d4d1d9;
             margin:0 0 0.125rem;
-            padding: 0.5rem;
+            padding: 1.125rem 1rem;
             gap: 1rem;
+            position: relative;
+            .chat-time {
+                position: absolute;
+                top: 1.25rem;
+                right: 1rem;
+                font-size: 0.75rem;
+                color: #8e8b91;
+                font-weight: 500;
+            }
+            .chat-ib {
+                width: 65%;
+                span.chat-notify {
+                    position: absolute;
+                    right: 1rem;
+                    background: #9f8ab9;
+                    color: #fff;
+                    line-height: 1;
+                    text-align: center;
+                    border-radius: 50%;
+                    padding: 0.38rem 0.34rem;
+                    font-size: 0.5rem;
+                    font-weight: 700;
+                }
+            }
             h5, p{
                 margin: 0;
+                text-transform: capitalize;
+                margin-bottom: 0.5rem;
             }
             p{
                 overflow: hidden;
@@ -79,13 +119,15 @@
 }
 .mesgs {
     flex: auto;
+    width: 65%;
     .chat-people{
         @include flexprops();
-        flex-direction: row-reverse;
+        flex-wrap: wrap;
         justify-content: space-between;
         border: 0.06rem solid #d9d4d1;
         background: #fdfdfe;
-        padding: 1rem;
+        padding:0.75rem 1rem;
+        filter: drop-shadow(-6.928px 4px 20px rgba(63,20,115,0.06));
         span.user-name {
             font-weight: 500;
             font-size: 1rem;
@@ -94,41 +136,72 @@
         p{
             margin: 0;
         }
+        p.productLink {
+            padding-right: 2.25rem;
+        }
     }
     .statusDrpDown{
         @include flexprops();
-        gap: 0.5rem;
+        align-items: center;
+        gap: 0.75rem;
         .cat-visiblity > span {
-            padding: 0.25rem 1rem;
+            padding: 0.5rem 1rem;
             border-radius: 0.25rem;
             background: #fceceb;
             color: #DF5D65;
+            line-height: 1;
+            display: block;
         }
         .cat-visiblity {
             position: relative;
         ul.enquiry-status-open {
             background: #fdfdfe;
-            border: 0.06rem solid #d9d4d1;
-            padding: 1rem;
+            padding-top: 0.5rem;
             position: absolute;
-            width: 5rem;
+            width: 8rem;
             right: 0;
             top: 117%;
             margin: 0;
-            box-shadow: 0rem 1rem 2.5rem rgb(63 20 115 / 5%);
-            .statusButnArea button {
+            box-shadow: 0rem 1rem 2.5rem rgb(63 20 115 / 7%);
+            li span{
+                padding: 0.2rem 1rem;
+                display: block;
+                font-size: 0.875rem;
+                &:hover{
+                    background: #ece8f1;
+                }
+            }
+            input[type=radio]{
+                display: none;
+            }
+            input:checked + span {
+                background: #795b9d;
+                color: #f9f8fb;
+            }
+            .statusButnArea {
+                text-align: center;
+                padding: 0.5rem 0 0.875rem;
+                width: 100%;
+                background: #f9f8fb;
+                border-top: 0.06rem solid #f2eff5;
+           
+             button {
                 background: #e35047;
                 border: 0;
                 color: #f9f8fb;
-                padding: 0.25rem 1rem;
-                line-height: 1.6;
+                padding: 0.125rem 0.5rem;
                 margin: auto;
-                border-radius: 0.25rem;
+                border-radius: 0.125rem;
+                font-size: 0.75rem;
+                line-height: 1.6;
+                width: 87%;
+            }
             }
         }
     }
 
     }
+
    
     .msg-history {
         background: #fdfdfe;
@@ -137,12 +210,15 @@
         border: 0.06rem solid #d9d4d1;
         border-radius: 0.125rem;
     }
+    .type-msg {
+        margin-top: 1rem;
+    }
     .input-msg-write {
         display: flex;
         gap: 1rem;
         background: #fdfdfe;
         border: 0.06rem solid #d9d4d1;
-        padding:1.25rem 1.25rem;
+        padding:1rem 1.5rem;
         textarea{
             border: 0;
             line-height: 1.2;
@@ -153,7 +229,7 @@
             background-color: #e35047;
             border: 0;
             padding: 0.25rem 1rem;
-            border-radius: 0.25rem;
+            border-radius: 0.125rem;
             color: #f9f8fb;
             font-weight: 500;
             font-size: 1rem;
@@ -162,31 +238,70 @@
     }
     .imgNameCls {
        @include flexprops();
-       align-items: center;
-        gap: 0.75rem;
+        gap: 1rem;
         .productDetailid{
             font-weight: 500;
             color: #65438F;
         }
-        .chat-img p{
+        .chat-img{
+            width: 2.5rem;
+            height: 2.5rem;
+            min-width: 2.5rem;
+
+        p{
             img{
                 border-radius: 50%;
             }
         }
+    }
+    .chat-ib p{
+        margin-bottom: 0.5rem !important;
+    }
        
     }
 }
-.incoming-msg {
-    margin-left: auto;
-    width: 40%;
-    text-align: right;
+span.time-date {
+    font-size: 0.625rem;
+    color: #8e8b91;
 }
-.received-withd-msg p {
-    border: 0.06rem solid #d9d1d6;
-    padding: 1rem;
-    border-radius: 0.5rem 0.5rem  0 0.5rem;
-    margin-bottom: 0.25rem;
-    background-color: #ece8f1;
+.incoming-msg {
+    width: 50%;
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+
+    .received-msg {    
+        .received-withd-msg  p {
+            border: 0.06rem solid #d4d1d9;
+            padding: 1rem 2.5rem 1.5rem 1rem;
+            border-radius: 1rem 1rem 1rem 0;
+            margin-bottom: 0.25rem;
+    }
+}
+}
+
+.outgoing-msg{
+    width: 50%;
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+    margin-left: auto;
+    text-align: right;
+    flex-direction: row-reverse;
+    .sent-msg{
+     p{
+        border: 0.06rem solid #ece8f1;
+        padding: 1rem 1rem 1.5rem 2.25rem;
+        border-radius: 1rem 1rem 0 1rem;
+        margin-bottom: 0.25rem;
+        background-color: #f9f8fb;
+    }
+}
+}
+.chat-profile p img {
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
 }
 @media screen and (max-width: 992px) {
     .css-b62m3t-container {
@@ -194,5 +309,13 @@
     }
     .inbox-people {
         width: 100%;
+    }
+    .incoming-msg {
+        width: 76%;
+    }
+  }
+  @media screen and (max-width: 782px){
+    .outgoing-msg, .incoming-msg{
+    width: 100%;
     }
   }

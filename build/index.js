@@ -2176,7 +2176,8 @@ class Banner7 extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
       second_choice: '',
       others_choice: '',
       catalog_start_date_order: '',
-      catalog_end_date_order: ''
+      catalog_end_date_order: '',
+      open_status_change_popup: false
     };
     this.woocommerce_catalog_enquiry_open_chat = this.woocommerce_catalog_enquiry_open_chat.bind(this);
     this.woocommerce_catalog_enquiry_send_reply = this.woocommerce_catalog_enquiry_send_reply.bind(this);
@@ -2227,8 +2228,16 @@ class Banner7 extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
             });*/
   }
 
-  catalog_status_changes_dropdown_close(e) {}
-  catalog_status_changes_dropdown_open(e) {}
+  catalog_status_changes_dropdown_close(e) {
+    this.setState({
+      open_status_change_popup: false
+    });
+  }
+  catalog_status_changes_dropdown_open(e) {
+    this.setState({
+      open_status_change_popup: true
+    });
+  }
   StatusOnChange(e, datas) {
     console.log(datas[0]);
   }
@@ -2251,7 +2260,28 @@ class Banner7 extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
       });
     });
   }
-  woocommerce_catalog_enquiry_open_chat(to_user_id, product_id, enquiry_id) {
+  woocommerce_catalog_enquiry_open_chat(to_user_id, product_id, enquiry_id, current_id) {
+    //console.log('current_id');
+    (0,axios__WEBPACK_IMPORTED_MODULE_3__["default"])({
+      method: 'post',
+      url: `${catalogproappLocalizer.apiUrl}/mvx_catalog_pro/v1/status_change_to_read`,
+      data: {
+        to_user_id: to_user_id,
+        product_id: product_id,
+        enquiry_id: enquiry_id,
+        current_id: current_id
+      }
+    }).then(response => {
+      (0,axios__WEBPACK_IMPORTED_MODULE_3__["default"])({
+        url: `${catalogproappLocalizer.apiUrl}/mvx_catalog_pro/v1/fetch_enquiry_post_details`
+      }).then(response1 => {
+        this.setState({
+          items: response1.data
+          //write_msg_change: ''
+        });
+      });
+    });
+
     this.setState({
       is_msg_callback_open: true,
       open_enquiry_id: enquiry_id
@@ -2317,8 +2347,8 @@ class Banner7 extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "inbox-chat"
     }, this.state.items.length > 0 ? this.state.items.map((student1, index1) => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: `chat-list chat-list_${index1}`,
-      onClick: e => this.woocommerce_catalog_enquiry_open_chat(student1.to_user_id, student1.product_id, student1.enquiry_id)
+      className: `chat-list chat-list_${index1} ${this.state.open_enquiry_id === student1.enquiry_id ? 'active-product' : ''}`,
+      onClick: e => this.woocommerce_catalog_enquiry_open_chat(student1.to_user_id, student1.product_id, student1.enquiry_id, student1.current_user_id)
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "chat-people"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -2338,44 +2368,19 @@ class Banner7 extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
     }, "  ", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
       className: "chat-notify"
     }, student1.count)) : ''), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-      className: "admin-short-comming-msg"
-    }, student1.last_massage))))) : '')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "admin-short-comming-msg",
+      dangerouslySetInnerHTML: {
+        __html: student1.last_massage
+      }
+    })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "chat-time"
+    }, student1.enquiry_post_date)))) : '')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "mesgs"
     }, this.state.is_msg_callback_open && this.state.items.length > 0 ? this.state.items.map((student2, index2) => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, this.state.open_enquiry_id === student2.enquiry_id ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "chat-list chat-list-msg"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "chat-people"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "customerTitleArea"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "statusDrpDown"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-      className: "productLink"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
-      className: "woo-catalog-quantity-class"
-    }, " Product Quantity : ", student2.quantity_number, " ")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", null, "Status"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "cat-visiblity",
-      onClick: e => this.catalog_status_changes_dropdown_open(e)
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, student2.enquiry_current_status), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", {
-      className: "enquiry-status-open"
-    }, Object.entries(student2.catalog_status).length > 0 ? Object.entries(student2.catalog_status).map(student4 => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
-      type: "radio",
-      name: "enquiry_status",
-      id: `enquiry_status ${student4[0]}`,
-      onChange: e => {
-        this.StatusOnChange(e, student4);
-      }
-    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
-      for: `enquiry_status ${student4[0]}`,
-      className: "selectit"
-    }, student4[1]))))) : '', (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "status-changes-area"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "statusButnArea"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-      type: "button",
-      onClick: e => this.catalog_status_changes_dropdown_close(e)
-    }, "Cancel"))))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "imgNameCls"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "chat-img"
@@ -2390,29 +2395,72 @@ class Banner7 extends react__WEBPACK_IMPORTED_MODULE_1__.Component {
       dangerouslySetInnerHTML: {
         __html: student2.user_name_and_email
       }
-    }), " | \xA0", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+    }), "\xA0| \xA0", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
       className: "productDetailCls"
     }, student2.enquiry_post_date)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-      className: "productDetailCls"
-    }, student2.enquiry_post_title)))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "productEnquiryArea"
+      className: "productDetailid"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, student2.enquiry_post_title)))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "customerTitleArea"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "enquiry-details-chat"
-    })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "statusDrpDown"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+      className: "productLink"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+      className: "woo-catalog-quantity-class"
+    }, " Product Quantity : ", student2.quantity_number, " ")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", null, "Status"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "cat-visiblity"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+      onClick: e => this.catalog_status_changes_dropdown_open(e)
+    }, student2.enquiry_current_status), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", {
+      className: "enquiry-status-open"
+    }, this.state.open_status_change_popup && Object.entries(student2.catalog_status).length > 0 ? Object.entries(student2.catalog_status).map(student4 => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+      type: "radio",
+      name: "enquiry_status",
+      id: `enquiry_status ${student4[0]}`,
+      onChange: e => {
+        this.StatusOnChange(e, student4);
+      }
+    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+      for: `enquiry_status ${student4[0]}`,
+      className: "selectit"
+    }, student4[1]))))) : '', this.state.open_status_change_popup ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "status-changes-area"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "statusButnArea"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+      type: "button",
+      onClick: e => this.catalog_status_changes_dropdown_close(e)
+    }, "Cancel"))) : ''))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "msg-history"
-    }, student2.conversation_lists.length > 0 ? student2.conversation_lists.map((student3, index3) => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, student3.value_c.from_user_id === student3.current_user_id ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    }, student2.conversation_lists.length > 0 ? student2.conversation_lists.map((student3, index3) => (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, student3.value_c.from_user_id == student3.current_user_id ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "outgoing-msg"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "chat-profile"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+      dangerouslySetInnerHTML: {
+        __html: student3.current_user_avater
+      }
+    })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "sent-msg"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, student3.value_c.chat_message), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
       className: "time-date"
     }, student3.date_format, " | ", student3.time_format))) : (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "incoming-msg"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "chat-profile"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+      dangerouslySetInnerHTML: {
+        __html: student3.incoming_avater
+      }
+    })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "received-msg"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "received-withd-msg"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, student3.value_c.chat_message), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+      dangerouslySetInnerHTML: {
+        __html: student3.value_c.chat_message
+      }
+    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
       className: "time-date"
     }, student3.date_format, " | ", student3.time_format)))))) : 'No conversation found !'), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       className: "type-msg"

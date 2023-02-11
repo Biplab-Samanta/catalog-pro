@@ -133,6 +133,29 @@ class Woocommerce_Catalog_Enquiry_Pro {
                 'current_id'     => get_current_user_id(),
             ],
         ] );
+
+         // fetch catalog post details
+        register_rest_route( 'mvx_catalog_pro/v1', '/status_change_to_read', [
+            'methods' => WP_REST_Server::EDITABLE,
+            'callback' => array( $this, 'mvx_catalog_pro_status_change_to_read' ),
+            'permission_callback' => array( $this, 'catalog_pro_permission' ),
+        ] );
+    }
+
+    public function mvx_catalog_pro_status_change_to_read($request) {
+        global $wpdb;
+        $to_user_id = $request && $request->get_param('to_user_id') ? $request->get_param('to_user_id') : '';
+        $product_id = $request && $request->get_param('product_id') ? $request->get_param('product_id') : '';
+        $enquiry_id = $request && $request->get_param('enquiry_id') ? $request->get_param('enquiry_id') : '';
+        $current_id = $request && $request->get_param('current_id') ? $request->get_param('current_id') : '';
+
+        $histrory_unread = get_customer_vendor_admin_conversation_details( $current_id , $to_user_id, $product_id );
+        foreach ($histrory_unread as $key => $value_unread) {
+           if ( $value_unread->to_user_id == $current_id ) {
+               
+               $wpdb->query("UPDATE `{$wpdb->prefix}catelog_cust_vendor_answers` SET status = ' read' WHERE enquiry_id =" . $value_unread->enquiry_id . " AND chat_message_id = " . $value_unread->chat_message_id ); 
+           }
+        }
     }
 
     public function mvx_catalog_pro_update_msg_by_admin($request) {
@@ -141,8 +164,12 @@ class Woocommerce_Catalog_Enquiry_Pro {
         $chat_message = $request && $request->get_param('text') ? $request->get_param('text') : '';
         $data_product = !empty($data_value) ? $data_value['product_id'] : 0;
         $data_enquiry = !empty($data_value) ? $data_value['enquiry_id'] : 0;
-        $vendor_id = !empty($data_value) ? $data_value['to_user_id'] : 0;
 
+
+        $current_user_id = $request && $request->get_attributes('args')['args']['current_id'] ? $request->get_attributes('args')['args']['current_id'] : 0;
+
+        //$vendor_id = !empty($data_value) ? $data_value['to_user_id'] : 0;
+        $vendor_id = $current_user_id;
 
         //$vendor_id =  get_current_user_id();
         //$data_product = isset($_POST['data_product']) ? absint($_POST['data_product']) : 0;
@@ -195,21 +222,8 @@ class Woocommerce_Catalog_Enquiry_Pro {
         $three_dropdown_previous_depend = $request && $request->get_param('others_choice') ? $request->get_param('others_choice') : '';
         $catalog_start_date_order = $request && $request->get_param('catalog_start_date_order') ? $request->get_param('catalog_start_date_order') : '';
         $catalog_end_date_order = $request && $request->get_param('catalog_end_date_order') ? $request->get_param('catalog_end_date_order') : '';
-        
-
         $current_user_id = $request && $request->get_attributes('args')['args']['current_id'] ? $request->get_attributes('args')['args']['current_id'] : '';
-        
-        /*if ($three_dropdown_previous_depend) {
-            print_r($three_dropdown_previous_depend);
-            echo "  ";
-            print_r($one_dropdown_status);
-            echo "  ";
-            print_r($two_dropdown_selection_choice);
-
-
-            die;
-        }*/
-        
+                
         $default = array(
           'posts_per_page'    => -1,
           'post_type'         => 'wcce_enquiry',
@@ -324,14 +338,16 @@ class Woocommerce_Catalog_Enquiry_Pro {
                     $last_massage = get_user_last_massage( $current_user_id , $to_user_id, $product_id);
                 }
 
+                //print_r($current_user_id);die;
+
                 $histrory_unread = get_customer_vendor_admin_conversation_details( $current_user_id , $to_user_id, $product_id );
-                $count = 0;
-                foreach ($histrory_unread as $key1 => $value1) {
+                $count = 11;
+                /*foreach ($histrory_unread as $key1 => $value1) {
                     if ( $value1->status == 'unread' && $value1->from_user_id != $current_user_id ){
                         $count++;
                     }
-                }
-                global $wpdb;
+                }*/
+                
                 $conversation_lists = [];
                 //$conversation = get_customer_vendor_conversation_details( $current_user_id , $to_user_id, $product_id );
 
@@ -341,11 +357,15 @@ class Woocommerce_Catalog_Enquiry_Pro {
                         $dateTime = new DateTime($value_c->timestamp); 
                         $date_format = $dateTime->format("F d");
                         $time_format = $dateTime->format("H:i A");
+                        
 
                         $conversation_lists[] = [
                             'date_format'   =>  $date_format,
                             'time_format'   =>  $time_format,
-                            'value_c'         =>  $value_c
+                            'value_c'         =>  $value_c,
+                            'current_user_id'   =>  $current_user_id,
+                            'current_user_avater' => get_avatar( $current_user_id , 60 ),
+                            'incoming_avater' => get_avatar( $value_c->from_user_id , 60 )
                         ];
                     }
                 }
@@ -394,7 +414,7 @@ class Woocommerce_Catalog_Enquiry_Pro {
     }
 
     public function mvx_catalog_pro_fetch_enquiry_data() {
-        $mvx_vendor_registration_form_data = mvx_get_option('mvx_catalog_pro_enquiry_form_data') ? mvx_get_option('mvx_catalog_pro_enquiry_form_data') : [];
+        $mvx_vendor_registration_form_data = get_option('mvx_catalog_pro_enquiry_form_data') ? get_option('mvx_catalog_pro_enquiry_form_data') : [];
         return rest_ensure_response( $mvx_vendor_registration_form_data );
     }
 
@@ -405,8 +425,10 @@ class Woocommerce_Catalog_Enquiry_Pro {
                 $form_data[$key]['hidden'] = false;
             }
         }
-        mvx_update_option('mvx_catalog_pro_enquiry_form_data', $form_data);
-        die;
+        if (!empty($form_data) && count($form_data) > 0 && !empty($form_data[1]['label']) ) {
+            mvx_update_option('mvx_catalog_pro_enquiry_form_data', $form_data);
+            die;
+        }
     }
 
     public function catalog_pro_permission() {
@@ -421,7 +443,7 @@ class Woocommerce_Catalog_Enquiry_Pro {
             'key'       => 'custom_email_subject88',
             'label'     => __( 'Enquiry Form fields', 'woocommerce-catalog-enquiry' ),
             'type'      => 'custom_fileds',
-            'database_value' => mvx_get_option('mvx_catalog_pro_enquiry_form_data') ? mvx_get_option('mvx_catalog_pro_enquiry_form_data') : [],
+            'database_value' => get_option('mvx_catalog_pro_enquiry_form_data') ? get_option('mvx_catalog_pro_enquiry_form_data') : [],
         );
         $args['enquiry-pro-field'] = array(
             'tablabel'        =>  __('Enquiry Email Template', 'woocommerce-catalog-enquiry'),
